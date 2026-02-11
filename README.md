@@ -16,6 +16,19 @@ A high‐fidelity Unity‑based framework implementing reward‑augmented learni
 - 📂 **Modular & Extensible**: Codebase structured for easy extension, benchmarking, and integration with new algorithms or tasks.
 
 ---
+
+
+### Reward Parameter Settings
+
+| Symbol | Description | Value |
+|--------|-------------|-----------|
+| $F_G^{env}$ | Goal completion reward | $+3000$ |
+| $F_C^{env}$ | Collision penalty | $-100$ |
+| $F_L^{env}$ | Living penalty | $-0.10$ per step |
+| $\zeta$ | Milestone shaping scale | $13$ |
+| $d_{\text{collision}}$ | Ray collision threshold | $0.2\,\text{m}$ |
+| $L_{\text{ray}}$ | Ray sensing length | $35\,\text{m}$ |
+
 ![Car_Parking_Project](Car_Parking_Project.jpg)
 ![Inference](PPO-MBR_inference.gif)
 
