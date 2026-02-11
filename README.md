@@ -19,6 +19,11 @@ A high‐fidelity Unity‑based framework implementing reward‑augmented learni
 
 
 ### Reward Parameter Settings
+All reward parameters used in our experiments are fixed across methods and provided as a complete table in the accompanying repository (Supplementary Reward Parameters). 
+$F_G^{env}$ sets the terminal incentive for successful parking, $F_C^{env}$ penalizes collisions, and $F_L^{env}$ discourages unnecessarily long trajectories. 
+The milestone scale $\zeta$ controls the strength of mid-trajectory guidance relative to terminal feedback. 
+Overly small $|F_C^{env}|$ may permit risky behavior, while overly large $|F_C^{env}|$ can slow exploration; similarly, larger $\zeta$ accelerates early learning but may reduce reliance on terminal reward.
+
 
 | Symbol | Description | Value |
 |--------|-------------|-----------|
